@@ -359,6 +359,32 @@ body.product-detail-page {
   margin-bottom: 32px;
 }
 
+/* Accessibility contrast + focus overrides */
+
+.price,
+.product-price {
+  color: #8a4f38;
+}
+
+.link-generic {
+  color: #3f3f3f;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.btn-light {
+  color: #8a4f38;
+  border-color: #8a4f38;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #1b1b1b;
+  outline-offset: 3px;
+}
+
 .steps-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -519,4 +545,20 @@ body.product-detail-page {
   .steps-grid {
       grid-template-columns: 1fr;
   }
+}
+
+/* Button color unification (normal + hover) */
+
+.btn,
+.btn-light {
+  background-color: #c17a5c;
+  color: #ffffff;
+  border-color: #c17a5c;
+}
+
+.btn:hover,
+.btn-light:hover {
+  background-color: #c17a5c;
+  color: #ffffff;
+  border-color: #c17a5c;
 }
